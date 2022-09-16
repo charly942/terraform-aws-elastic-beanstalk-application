@@ -26,3 +26,8 @@ variable "bucket_name" {
   type        = string
   description = "The name of the S3 bucket to store the application version in"
 }
+
+variable "application_name" {
+  type        = string
+  description = "The name of the application to associate with this environment"
+}
