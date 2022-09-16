@@ -21,3 +21,8 @@ variable "appversion_lifecycle_delete_source_from_s3" {
   default     = false
   description = "Whether to delete application versions from S3 source"
 }
+
+variable "bucket_name" {
+  type        = string
+  description = "The name of the S3 bucket to store the application version in"
+}
