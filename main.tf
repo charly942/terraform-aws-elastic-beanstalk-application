@@ -24,7 +24,7 @@ resource "aws_s3_bucket" "default" {
 resource "aws_s3_object" "default" {
   bucket = aws_s3_bucket.default.id
   key    = format("%s/", var.destFileName)
-  source = "provisiones.zip"
+  source = "beanstalk/"
 }
 
 resource "aws_elastic_beanstalk_application_version" "default" {
