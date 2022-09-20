@@ -31,8 +31,3 @@ variable "application_name" {
   type        = string
   description = "The name of the application to associate with this environment"
 }
-
-variable "destFileName" {
-  type        = string
-  description = "The name of the application version archive in the S3 bucket"
-}
