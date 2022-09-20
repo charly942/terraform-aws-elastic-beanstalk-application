@@ -23,8 +23,7 @@ resource "aws_s3_bucket" "default" {
 
 resource "aws_s3_object" "default" {
   bucket = aws_s3_bucket.default.id
-  key    = "beanstalk"
-  source = "provisiones.zip"
+  key    = "beanstalk/provisiones.zip"
 }
 
 resource "aws_elastic_beanstalk_application_version" "default" {
